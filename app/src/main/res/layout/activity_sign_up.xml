@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    tools:context=".Register">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@id/loginLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <EditText
+                android:id="@+id/firstNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/firstNameHint"
+                android:inputType="textPersonName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <EditText
+                android:id="@id/emailTextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:ems="10"
+                android:hint="@string/register_email"
+                android:inputType="textEmailAddress"
+                android:layout_below="@+id/firstNameText"
+                android:layout_alignRight="@+id/firstNameText"
+                android:layout_alignEnd="@+id/firstNameText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@id/passwordTextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:ems="10"
+                android:hint="@string/register_password"
+                android:inputType="textPassword"
+                android:layout_below="@id/emailTextBox"
+                android:layout_alignRight="@id/emailTextBox"
+                android:layout_alignEnd="@id/emailTextBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/confirmPasswordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/register_confirm_password"
+                android:inputType="textPassword"
+                android:layout_below="@id/passwordTextBox"
+                android:layout_alignRight="@id/passwordTextBox"
+                android:layout_alignEnd="@id/passwordTextBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@id/loginButtonLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/scrollView"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@id/registerButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="register"
+            android:text="@string/registerTextButton"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/scrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </LinearLayout>
+</RelativeLayout>

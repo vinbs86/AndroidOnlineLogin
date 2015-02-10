@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="appHeaderText">Login App</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Login App</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="emailHint">Email</string>
+    <string name="emailString">Email</string>
+    <string name="firstNameDisplayText">Nickname</string>
+    <string name="firstNameHint">Nickname</string>
+    <string name="forgotTextButton">Forgot Password</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello VVorld</string>
+    <string name="homeButtonText">Home</string>
+    <string name="itemHint">Item</string>
+    <string name="loginCheckBox">Remember me</string>
+    <string name="loginTextButton">Login</string>
+    <string name="logoutButtonText">Logout</string>
+    <string name="passwordHint">Password</string>
+    <string name="passwordTextView">Password</string>
+    <string name="registerHeaderText">Registration</string>
+    <string name="registerTextButton">Register</string>
+    <string name="rememberPasswordHint">"Don't make me login next time"</string>
+    <string name="resetHeaderText">Reset Password</string>
+    <string name="resetPWButtonText">Reset</string>
+    <string name="resetText">Check your email!</string>
+    <string name="statusBarRegisterText">Scroll down to finish registration!</string>
+    <string name="statusBarText">Welcome!</string>
+    <string name="title_activity_login">Login to App</string>
+    <string name="title_activity_my_web_view">MyWebView</string>
+    <string name="title_activity_register">Sign Up with App</string>
+    <string name="title_activity_reset">Reset</string>
+    <string name="register_password">Password</string>
+    <string name="register_email">Email </string>
+    <string name="register_confirm_password">Type your password again</string>
+
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_forgot_password">Reset Password</string>
+
+</resources>

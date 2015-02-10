@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <LinearLayout
+            android:id="@+id/loginLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/emailTextBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:hint="@string/emailHint"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_alignLeft="@+id/passwordTextBox"
+                android:layout_alignStart="@+id/passwordTextBox"
+                android:layout_alignRight="@+id/passwordTextBox"
+                android:layout_alignEnd="@+id/passwordTextBox">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/passwordTextBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:hint="@string/passwordHint"
+                android:inputType="textPassword"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_column="0"
+                android:layout_span="4"
+                android:layout_below="@+id/emailTextBox"
+                android:layout_alignRight="@+id/loginButtonLinearLayout"
+                android:layout_alignEnd="@+id/loginButtonLinearLayout"
+                android:layout_alignLeft="@+id/loginButtonLinearLayout"
+                android:layout_alignStart="@+id/loginButtonLinearLayout" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/saveLoginCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loginCheckBox"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/abc_action_bar_default_padding_material"
+            android:checked="false"
+            android:layout_below="@id/loginLinearLayout"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/loginButtonLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/saveLoginCheckBox"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/loginButton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loginTextButton" />
+
+            <Button
+                android:id="@+id/registerButton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registerTextButton" />
+
+            <Button
+                android:id="@+id/forgotButton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgotTextButton"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
